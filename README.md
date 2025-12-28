@@ -6,3 +6,7 @@ chmod +x fetch.sh
 ```
 ./fetch.sh --force
 ```
+
+```
+fafetch.bat
+```
