@@ -26,7 +26,7 @@ if [[ "$force" == false && "$age" -lt "$SECONDS" ]]; then
   exit 0
 fi
 
-echo "🔍 Detecting Tomato.gg build ID…"
+echo "Detecting Tomato.gg build ID…"
 
 BUILD_ID=$(
 curl -s https://tomato.gg \
@@ -44,7 +44,7 @@ echo "Build ID: $BUILD_ID"
 
 BASE="https://tomato.gg/_next/data/$BUILD_ID/en"
 
-echo "🔄 Fetching data…"
+echo "Fetching data…"
 
 curl -s "$BASE/meta-insights/EU.json?server=EU" \
   -o "$OUT/meta.json"
